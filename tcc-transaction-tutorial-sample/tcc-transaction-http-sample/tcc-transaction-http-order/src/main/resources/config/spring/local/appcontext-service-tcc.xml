@@ -14,9 +14,9 @@
     <bean id="transactionRepository"
     class="org.mengyun.tcctransaction.spring.repository.SpringJdbcTransactionRepository">
     <property name="dataSource" ref="tccDataSource"/>
-    <property name="domain" value="ORDER"/>
-    <property name="tbSuffix" value="_ORD"/>
-    <property name="serializer" ref="objectSerializer"/>
+    <property name="domain"  value="ORDER"/>
+    <property name="tbSuffix"  value="_ORD"/>
+    <property name="serializer"  ref="objectSerializer"/>
     </bean>
 
     <bean id="tccDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
